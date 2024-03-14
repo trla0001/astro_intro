@@ -1,0 +1,14 @@
+---
+
+import "../styles/style.css"
+import MainLayout from "../layouts/MainLayout.astro";
+import Card from "../components/Card.astro"
+---
+<MainLayout title="Om os">
+        <h2>Her er about us</h2>
+   <Card header="Cykel"></Card>
+   <Card header="Bil"></Card>
+   <Card header="Båd" soldOut={true}></Card>
+   <Card header="Rulleskøjter"></Card>
+        </MainLayout>
+

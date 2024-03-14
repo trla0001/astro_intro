@@ -2,12 +2,13 @@
 /* const header = Astro.props.header;
 const text = Astro.props.text; */
 
-const { header} = Astro.props;
+const { header, soldOut} = Astro.props;
 
 ---
 
 <article>
 				<h2>{header}</h2>
+                {soldOut && <p>UDSOLGT</p>}
                 <p>Kortere lorem ipsum</p>
 				<slot/>
 			</article>
@@ -15,6 +16,9 @@ const { header} = Astro.props;
             <style>
                 p{ 
                     color: blue;
+                }
+                .card{
+                    background-color: azure;
                 }
             </style>
             
